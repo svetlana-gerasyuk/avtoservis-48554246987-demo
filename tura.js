@@ -64,7 +64,7 @@
       for (const b of list) {
         b.y -= b.v * dt; b.ph += dt; if (b.y < -b.r * 2) Object.assign(b, mk(false));
         const x = b.x + Math.sin(b.ph * 1.1) * b.sw, g = ctx.createRadialGradient(x - b.r * 0.35, b.y - b.r * 0.35, b.r * 0.1, x, b.y, b.r);
-        g.addColorStop(0, "rgba(255,255,255," + b.a * 0.55 + ")"); g.addColorStop(0.6, "rgba(150,225,245," + b.a * 0.12 + ")"); g.addColorStop(1, "rgba(190,240,255," + b.a * 0.38 + ")");
+        g.addColorStop(0, "rgba(255,255,255," + b.a * 0.55 + ")"); g.addColorStop(0.6, "rgba(200,80,72," + b.a * 0.12 + ")"); g.addColorStop(1, "rgba(230,120,110," + b.a * 0.38 + ")");
         ctx.beginPath(); ctx.arc(x, b.y, b.r, 0, 6.2832); ctx.fillStyle = g; ctx.fill(); ctx.lineWidth = 1; ctx.strokeStyle = "rgba(200,244,255," + b.a * 0.7 + ")"; ctx.stroke();
         ctx.beginPath(); ctx.arc(x - b.r * 0.38, b.y - b.r * 0.38, Math.max(0.8, b.r * 0.16), 0, 6.2832); ctx.fillStyle = "rgba(255,255,255," + Math.min(0.9, b.a + 0.3) + ")"; ctx.fill();
       }
