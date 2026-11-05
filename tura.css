@@ -368,3 +368,8 @@ main { max-width: none; padding: 0; overflow-x: clip; }
   .t-bubbles, .t-glare { display: none; }
   .t-drop { opacity: .7; }
 }
+
+/* Фирменный знак «Туры» (аватар сообщества ВК) */
+.t-logo { display: block; width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex: none; box-shadow: 0 0 0 2px color-mix(in srgb, #b3202a 70%, transparent), 0 0 18px color-mix(in srgb, var(--t-aqua) 35%, transparent); }
+.t-foot-brand { display: inline-flex; align-items: center; gap: 10px; }
+.t-foot-brand .t-logo { width: 28px; height: 28px; }
